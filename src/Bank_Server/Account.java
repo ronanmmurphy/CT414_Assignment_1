@@ -5,12 +5,37 @@
  */
 package Bank_Server;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author MacdaraDay
  */
 public class Account {
-    public void setBalance(int account, int amount) {
-        //Maybe
+    private int accNum;
+    private double openingBal;
+    private double balance;
+    
+    public Account(int accNum, double openingBal){
+        this.accNum = accNum;
+        this.openingBal = openingBal;
+    }
+    
+    public int getAccountNum(){
+        return accNum;
+    }
+    public double getOpeningBal(){
+        return openingBal;
+    }
+    public void desopit(int amount){
+        balance = balance+amount;
+        //DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        Transaction transaction = new Transaction(accNum, date, "Deposit",amount);
+    }
+    public double getBalance(){
+        return balance;
     }
 }
