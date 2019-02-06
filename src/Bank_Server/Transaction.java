@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author MacdaraDay
  */
-public class Transaction {
+public class Transaction{
     
     private int accNum;
     private Date startDate;
@@ -20,12 +20,14 @@ public class Transaction {
     private Date Date;
     private String type;
     private double amount;
+    private double balance;
     
-    public Transaction(int accNum, Date Date, String type, double amount){
+    public Transaction(int accNum, Date Date, String type, double amount, int balance){
         this.accNum = accNum;
         this.Date = Date;
         this.type = type;
         this.amount = amount;
+        this.balance = balance;
     }
     
     public Transaction(int accNum, Date startDate, Date endDate){
@@ -42,5 +44,36 @@ public class Transaction {
     
     public List<Transaction> getTransactions() {
         return transactions;
+    }
+    
+    public void setAccNum(int accNum){
+        this.accNum = accNum;
+    }
+    public int getAccNum(){
+        return accNum;
+    }
+    public void setDate(Date Date){
+        this.Date = Date;
+    }    
+    public Date getDate(){
+        return Date;
+    }
+    public void setType(String type){
+        this.type = type;
+    }
+    public String getType(){
+        return type;
+    }
+    public void setAmount(double amount){
+        this.amount = amount;
+    }
+    public double getAmount(){
+        return amount;
+    }
+    public void setBalance(double balance){
+        this.balance = balance;
+    }
+    public double getBalance(){
+        return balance;
     }
 }

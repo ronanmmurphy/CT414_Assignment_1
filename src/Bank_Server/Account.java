@@ -33,7 +33,7 @@ public class Account {
         balance = balance+amount;
         //DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
-        Transaction transaction = new Transaction(accNum, date, "Deposit",amount);
+        //Transaction transaction = new Transaction(accNum, date, "Deposit",amount);
     }
     public double getBalance(){
         return balance;

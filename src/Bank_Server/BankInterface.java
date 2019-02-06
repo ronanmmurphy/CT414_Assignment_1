@@ -22,7 +22,7 @@ public interface BankInterface extends Remote {
 
     public void deposit(int accountnum, int amount, long sessionID) throws RemoteException, InvalidSession;
 
-    public void withdraw(int accountnum, int amount, long sessionID) throws RemoteException, InvalidSession;
+    public void withdraw(int accountnum, int amount, long sessionID) throws RemoteException, InvalidSession, InsufficientFunds;
 
     public int inquiry(int accountnum, long sessionID) throws RemoteException, InvalidSession;
 
