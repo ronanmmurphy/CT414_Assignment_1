@@ -38,4 +38,12 @@ public class Account {
     public double getBalance(){
         return balance;
     }
+
+    void deposit(int amount) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    int getAccNum() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

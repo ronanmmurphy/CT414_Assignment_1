@@ -10,7 +10,7 @@ package Bank_Server;
  * @author Ronan
  */
 public class InvalidLogin extends Exception {
-    public InvalidLogin(){
-		super();
-	}
+    public InvalidLogin(String e){
+		super(e);
+        }
 }
