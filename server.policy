@@ -1,0 +1,14 @@
+grant {
+    permission java.security.AllPermission;
+//codebase "‎⁨Macintosh HD⁩/Users⁩/MacdaraDay⁩/NetBeansProjects⁩/CT414_Assignment_1⁩/src⁩/" // Note having that above caused loads of errors
+permission java.net.SocketPermission "localhost:0", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "127.0.0.1:1099-", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "*:1099-", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "*", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "Macintosh HD⁩", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "localhost:1099-", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "127.0.0.1:0", "accept, connect, listen, resolve";
+permission java.net.SocketPermission "*:0-", "accept, connect, listen, resolve";
+permission java.io.FilePermission "Macintosh HD⁩/", "read";
+permission java.io.FilePermission "Macintosh HD⁩/-", "read";
+};
